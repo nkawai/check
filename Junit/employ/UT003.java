@@ -20,7 +20,9 @@ public class UT003 {
 	private int num =12345;
 	String file = "C:/test/log/log.txt";
 	FileReader fr = null;
+	FileWriter fw = null;
 	BufferedReader br = null;
+
 	String time = null;
 	static String bak = null;
 
@@ -66,12 +68,16 @@ public class UT003 {
 		try{
 			fr = new FileReader(file);
 			br = new BufferedReader(fr);
+
+
 			time = date.getDate()+":";
 			String str = br.readLine();
 			System.out.println("ÅüUT003_002");
 			System.out.println(bak+time+num);
 			System.out.println(str);
 			assertThat(bak + time + num,is(str));
+
+			fw = new FileWriter(file);
 
 		}catch(IOException ioe){
 			System.out.println("ì«Ç›çûÇ›ÉGÉâÅ[");
