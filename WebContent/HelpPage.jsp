@@ -6,7 +6,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="Task.css" type="text/css" />
-<title>サービス一覧</title>	
+<title>サービス一覧</title>
 </head>
 <body>
 
