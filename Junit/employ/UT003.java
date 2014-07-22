@@ -55,6 +55,7 @@ public class UT003 {
 //. E.importからの出力用
 			assertThat(time + str1,is(str));
 			bak = time + str1;
+			fw = new FileWriter(file);
 
 		}catch(IOException ioe){
 			System.out.println("読み込みエラー");
@@ -73,9 +74,12 @@ public class UT003 {
 			time = date.getDate()+":";
 			String str = br.readLine();
 			System.out.println("◆UT003_002");
-			System.out.println(bak+time+num);
+//			System.out.println(bak+time+num);
+			System.out.println(time+num);
 			System.out.println(str);
-			assertThat(bak + time + num,is(str));
+//			assertThat(bak + time + num,is(str));
+
+			assertThat(time + num,is(str));
 
 			fw = new FileWriter(file);
 
