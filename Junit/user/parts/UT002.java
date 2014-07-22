@@ -192,6 +192,7 @@ public class UT002 {
         //. E.DB‰Šú‰»
 
         System.out.println(regDAO.getNextId()+"\n");
+        Initial_ins();
     }
 
 
