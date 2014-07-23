@@ -74,13 +74,17 @@ public class UT003 {
 			time = date.getDate()+":";
 			String str = br.readLine();
 			System.out.println("◆UT003_002");
-//			System.out.println(bak+time+num);
+/*. S.ファイル初期化しない場合
+*			System.out.println(bak+time+num);
+*/
 			System.out.println(time+num);
 			System.out.println(str);
-//			assertThat(bak + time + num,is(str));
-
+/*. S.ファイル初期化しない場合
+*			assertThat(bak + time + num,is(str));
+*/
 			assertThat(time + num,is(str));
 
+			// ファイル初期化
 			fw = new FileWriter(file);
 
 		}catch(IOException ioe){
