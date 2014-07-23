@@ -16,7 +16,7 @@ import employ.DateString;
 
 public class UT003 {
 
-	private String str1 ="sample:サンプル,";
+	private String str1 ="sample:サンプル";
 	private int num =12345;
 	String file = "C:/test/log/log.txt";
 	FileReader fr = null;
